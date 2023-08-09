@@ -1,6 +1,9 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import Header from '../Header/Header';
+import Footer from '../Footer/Footer';
+
+
 import './App.css';
 
 function App() {
@@ -52,7 +55,7 @@ function App() {
   }
 
   const myHeader = "Prim Proper Props";
-  
+
   console.log(newGuestMeal)
   return (
     <div className="App">
@@ -130,14 +133,12 @@ function App() {
       <div>
         Knives: {guestList.length * 2}
       </div>
-      <footer>
-        <h3>Have fun!</h3>
-        <p>Don't forget to mind your Ps and Qs!</p>
-      </footer>
+      <Footer title={'Have Fun!'} subtitle={"Don't forget to mind your Ps and Qs!"}/>
     </div>
   );
 }
 
 export default App;
+
 
 
