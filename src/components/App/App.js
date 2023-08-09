@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
+import Header from '../Header/Header';
 import './App.css';
 
 function App() {
@@ -50,12 +51,14 @@ function App() {
     }
   }
 
+  const myHeader = "Prim Proper Props";
+  
   console.log(newGuestMeal)
   return (
     <div className="App">
-      <header>
-        <h1>Prim Proper Props</h1>
-      </header>
+      {/* Title is the name of the property.
+      myHeader is the value. */}
+      <Header title={myHeader} />
       <h2>Party Leader</h2>
       {guestList[0] && <h3>{guestList[0].name}</h3>}
       <h2>Add a new guest</h2>
@@ -136,3 +139,5 @@ function App() {
 }
 
 export default App;
+
+
