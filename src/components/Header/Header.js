@@ -1,8 +1,8 @@
 
-function Header({title}) {
+function Header() {
     return (
     <>
-    <h1>{title}</h1>
+    <h1>{"Prim Proper Props"}</h1>
     </>
     )  
   }

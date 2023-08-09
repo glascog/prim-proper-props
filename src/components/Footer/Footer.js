@@ -1,8 +1,8 @@
-function Footer({title, subtitle}) {
+function Footer() {
     return ( 
     <>
-      <h3>{title}</h3>
-      <p>{subtitle}</p>
+      <h3>{'Have Fun!'}</h3>
+      <p>{"Don't forget to mind your Ps and Qs!"}</p>
     </>
     );
   }
